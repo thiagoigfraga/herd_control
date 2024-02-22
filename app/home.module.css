@@ -1,0 +1,30 @@
+.gridFiguras {
+    display: flex;          /* Ative o layout flexbox */
+    flex-wrap: wrap;        /* Permita que os itens quebrem para novas linhas se necessário */
+    justify-content: space-around; /* Centralize as imagens horizontalmente */
+  }
+
+  .gridFiguras img {
+    max-width: 16%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .gridFiguras {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .gridFiguras img {
+      max-width: auto;
+    }
+  }
+
+  .contato{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+  }
